@@ -45,7 +45,7 @@ jobs:
       - name: Install surge
         run: npm install --global surge
       - name: Deploy to Surge Server
-        run: surge ./build expense-tracker-app.surge.sh --token ${{secrets.EXPENSE_TRACKER}}
+        run: surge ./build http://etp-gma.surge.sh --token ${{secrets.EXPENSE_TRACKER}}
         
         
         
