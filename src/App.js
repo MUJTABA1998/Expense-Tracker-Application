@@ -1,18 +1,31 @@
 import './App.css';
-import { Nav } from "./Navbar";
+import  Nav  from "./Navbar";
+import Counter from "./Counter";
+
+
 
 function App() {
+
+  var app = {
+    name: "Expense Tracker",
+    version: "v 1.0"
+  }
+
   return (
+    
     <div className="App">
 
-      <Nav />
+      <Nav app_info = {app} />
+      <br />
+      <Counter />
 
-      <h3>Expense Tracker App</h3>
-      <p>In which i will track my expenses</p>
+      
         
     </div>
   );
 }
+
+
 
 
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 .App {
   text-align: center;
 }
@@ -6,6 +8,35 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.navbar{
+  display: flex;
+  background: #95a5a6;
+  min-height: 10vh;
+  align-items: center;
+}
+.navbar .logo{
+  margin: 40px;
+  font-size: 40px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+.counter{
+  font-family: 'Oswald', sans-serif;
+}
+.counter button{
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #95a5a6;
+  outline: none;
+  border-radius: 3px;
+  color: #282c34;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
