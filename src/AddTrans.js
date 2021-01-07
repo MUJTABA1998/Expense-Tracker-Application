@@ -11,7 +11,7 @@ export default function Transaction() {
 
    function handleAddition(e) {
         e.preventDefault();
-        if(Number(newAmount) === 0 || newTitle == ""){
+        if(Number(newAmount) === 0 || newTitle === " "){
             alert("Please enter valid information")
             return false
         }
@@ -19,6 +19,7 @@ export default function Transaction() {
             desc:newTitle,
             amount: Number(newAmount)
         })   
+        console.log(transaction)
         setAmount(0)
         setTitle("")
    }
