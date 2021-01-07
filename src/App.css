@@ -26,7 +26,7 @@
 }
 .counter button{
   width: 200px;
-  height: 40px;
+  height: 40px;     
   background: transparent;
   border: 1px solid #95a5a6;
   outline: none;
@@ -36,7 +36,79 @@
   letter-spacing: 2px;
   cursor: pointer;
 }
-
+.expenses{
+  width: 70%;
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Oswald', sans-serif;
+}
+#source{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  color: #34495e;
+}
+.expense{
+  border-left: 1px solid #95a5a6;
+}
+.income p{
+  color: #2ecc71;
+}
+.expense p{
+  color: #e74c3c;
+}
+.transaction{
+  width: 30%;
+  margin-left: 35%;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+.transaction input{
+  height: 10px;
+  width: 100%;
+  border: 1px solid #34495e;
+  padding: 20px;
+  outline: none;
+}
+.transaction span{
+  color: #e74c3c;
+  font-size: 13px;
+  margin-left: 10%;
+}
+.transaction button{
+  height: 50px;
+  font-family: 'Oswald', sans-serif;
+  width: 50%;
+  margin-left: 15%;
+  background: #34495e;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.History{
+  width: 50%;
+  margin-left: 25%;
+  background: #ecf0f1;
+  min-height: 50vh;
+  padding: 10px;
+}
+.History ul{
+  list-style: none;
+  width: 90%;
+  margin-top: 3%;
+}
+.History ul li{
+  font-family: 'Oswald', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #34495e;
+  margin: 40px;
+  padding: 20px;
+  color: white;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -1,6 +1,9 @@
 import './App.css';
 import  Nav  from "./Navbar";
-import Counter from "./Counter";
+import Expenses from "./Expenses";
+import Transaction from './AddTrans'
+import History from './HistoryTransactions'
+import {TransactionProvider} from './TransactionContext'
 
 
 
@@ -12,16 +15,23 @@ function App() {
   }
 
   return (
-    
+    <TransactionProvider>
     <div className="App">
 
       <Nav app_info = {app} />
       <br />
-      <Counter />
+      <Expenses />
+      <br/>
+      <br/>
+      <Transaction />
+      <br />
+      <br />
+      <History />
 
       
         
     </div>
+    </TransactionProvider>
   );
 }
 
