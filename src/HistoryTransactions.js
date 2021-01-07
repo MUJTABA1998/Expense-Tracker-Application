@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import {TransactionContext} from './TransactionContext'
 
 
-export default History = ({}) => {
+export default function History(){
 
     let {transactions} = useContext(TransactionContext)
     
